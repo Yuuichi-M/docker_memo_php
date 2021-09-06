@@ -4,7 +4,7 @@ services:
     image: nginx:1.19.1
     container_name: php_simple_memo_nginx
     ports:
-      - 8080:8080
+      - 8888:8080
     depends_on:
       - php
       - db
@@ -32,7 +32,7 @@ services:
     depends_on:
       - db
     ports:
-      - 8081:80
+      - 8889:80
 
   db:
     image: mysql:5.7
